@@ -1,0 +1,36 @@
+Il y'a quatre codes differents :
+
+Dans corde.sce, on commence par compiler avec la commande 'exec("cordes.sce")'
+puis on execute le code avec la commande : 'corde(SR, B, f, TF, x0, c0, rp, loss)'
+avec cette fonction on genere:
+-le profil de la corde au cours du temps
+-les images associées
+-les deux sons
+-la transformée de Fourier de out
+-les variations des positions aux points rp1 et rp2
+
+
+Dans membrane.sce, on commence par compiler avec la commande 'exec("membrane.sce")'
+puis on execute le code avec la commande : 'membrane(N0, Nr, CFL, c, lmn, fin) '
+avec cette fonction on genere :
+-le profil de la membrane associée au mode (0,3)
+-les images associées
+-traces les erreurs relatives et globaux
+
+
+Dans membrane1.sce, on commence par compiler avec la commande 'exec("membrane1.sce")'
+puis on execute le code avec la commande : 'membrane(N0, Nr, CFL, c, l01, l11, fin)'
+avec cette fonction on genere :
+-le profil de la membrane pour la condition initiale avec J0 et J1
+-on enregistre les images
+
+
+Dans membrane2.sce, on commence par compiler avec la commande 'exec("membrane2.sce")'
+puis on execute le code avec la commande : 'membrane(N0, Nr, CFL, c, l11, fin)'
+avec cette fonction on genere :
+-le profil de la membrane pour le mode (1,1)
+-on cree les images associées
+-on trace les erreurs relatif en eta = 0 et les erreurs globaux.
+
+
+-la variable globale fin correspond au temps de simulation
